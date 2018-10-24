@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANDDigital.Michael.Nee.API", "ANDDigital.Michael.Nee.API\ANDDigital.Michael.Nee.API.csproj", "{EB042FD1-A0B0-4A6B-B85F-B631709E92F7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A36D94E0-01C8-4B7D-8620-8E6501C972FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D3C36007-4411-4C1D-AAB1-4F104DAFDF5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANDDigital.Michael.Nee.Tests", "..\test\ANDDigital.Michael.Nee.Tests\ANDDigital.Michael.Nee.Tests\ANDDigital.Michael.Nee.Tests.csproj", "{66710143-DD2A-4631-862F-8C007DC21B7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANDDigital.Michael.Nee.API", "src\ANDDigital.Michael.Nee.API\ANDDigital.Michael.Nee.API.csproj", "{68FBE29C-D414-4104-8070-6B8EC43B684F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANDDigital.Michael.Nee.Tests", "test\ANDDigital.Michael.Nee.Tests\ANDDigital.Michael.Nee.Tests\ANDDigital.Michael.Nee.Tests.csproj", "{B1AA549C-D33D-4C00-92ED-EBF3C2CAAF8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,21 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB042FD1-A0B0-4A6B-B85F-B631709E92F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB042FD1-A0B0-4A6B-B85F-B631709E92F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB042FD1-A0B0-4A6B-B85F-B631709E92F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB042FD1-A0B0-4A6B-B85F-B631709E92F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66710143-DD2A-4631-862F-8C007DC21B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66710143-DD2A-4631-862F-8C007DC21B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66710143-DD2A-4631-862F-8C007DC21B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66710143-DD2A-4631-862F-8C007DC21B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FBE29C-D414-4104-8070-6B8EC43B684F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FBE29C-D414-4104-8070-6B8EC43B684F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FBE29C-D414-4104-8070-6B8EC43B684F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FBE29C-D414-4104-8070-6B8EC43B684F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AA549C-D33D-4C00-92ED-EBF3C2CAAF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AA549C-D33D-4C00-92ED-EBF3C2CAAF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AA549C-D33D-4C00-92ED-EBF3C2CAAF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AA549C-D33D-4C00-92ED-EBF3C2CAAF8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EB042FD1-A0B0-4A6B-B85F-B631709E92F7} = {A36D94E0-01C8-4B7D-8620-8E6501C972FF}
-		{66710143-DD2A-4631-862F-8C007DC21B7C} = {D3C36007-4411-4C1D-AAB1-4F104DAFDF5D}
+		{68FBE29C-D414-4104-8070-6B8EC43B684F} = {A36D94E0-01C8-4B7D-8620-8E6501C972FF}
+		{B1AA549C-D33D-4C00-92ED-EBF3C2CAAF8F} = {D3C36007-4411-4C1D-AAB1-4F104DAFDF5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {216BC782-CF58-4F2A-A096-D4341D1EB47D}
