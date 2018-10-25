@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
+using System.Reflection;
 using System.Text;
 
 namespace ANDDigital.Michael.Nee.Tests
@@ -14,7 +16,11 @@ namespace ANDDigital.Michael.Nee.Tests
         public HttpClient Client { get; }
         public TestServerFixture()
         {
+            string appRootPath = Path.GetFullPath(@"C:\\Users\\Michael\\source\\technical-interviews\\AND Digital\\code\\ANDDigital.Michael.Nee\\src\\ANDDigital.Michael.Nee.API");
+
             var builder = new WebHostBuilder()
+                  .UseContentRoot(appRootPath)
+
                   .UseEnvironment("Development")
                   .UseStartup<Startup>();  // Uses Start up class from your API Host project to configure the test server
 
@@ -27,5 +33,6 @@ namespace ANDDigital.Michael.Nee.Tests
             Client.Dispose();
             _testServer.Dispose();
         }
+
     }
 }
