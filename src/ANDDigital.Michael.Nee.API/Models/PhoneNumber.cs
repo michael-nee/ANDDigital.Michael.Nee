@@ -50,9 +50,11 @@ namespace ANDDigital.Michael.Nee.API.Models
             return false;
         }
 
-        public static IEnumerable<PhoneNumber> AllPhoneNumbers()
+        public static IEnumerable<PhoneNumber> AllPhoneNumbers
         {
-            return PhoneNumbers;
+            get {
+                return PhoneNumbers;
+            }
         }
 
         private static List<PhoneNumber> PhoneNumbers = new List<PhoneNumber>();

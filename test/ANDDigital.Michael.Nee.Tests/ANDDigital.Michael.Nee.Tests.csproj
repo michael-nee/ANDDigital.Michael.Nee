@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\ANDDigital.Michael.Nee.API\ANDDigital.Michael.Nee.API.csproj" />
+    <ProjectReference Include="..\..\src\ANDDigital.Michael.Nee.API\ANDDigital.Michael.Nee.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>

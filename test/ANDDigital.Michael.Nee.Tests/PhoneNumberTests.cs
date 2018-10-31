@@ -39,7 +39,7 @@ namespace ANDDigital.Michael.Nee.Tests
             var phoneNumber = PhoneNumber.CreatePhoneNumber("89389399443");
             var phoneNumber2 = PhoneNumber.CreatePhoneNumber("8938934433443");
 
-            Assert.NotEmpty(PhoneNumber.AllPhoneNumbers());
+            Assert.NotEmpty(PhoneNumber.AllPhoneNumbers);
         }
 
         [Fact]

@@ -19,8 +19,6 @@ namespace ANDDigital.Michael.Nee.Tests
             string appRootPath = Path.GetFullPath(@"C:\\Users\\Michael\\source\\technical-interviews\\AND Digital\\code\\ANDDigital.Michael.Nee\\src\\ANDDigital.Michael.Nee.API");
 
             var builder = new WebHostBuilder()
-                  .UseContentRoot(appRootPath)
-
                   .UseEnvironment("Development")
                   .UseStartup<Startup>();  // Uses Start up class from your API Host project to configure the test server
 

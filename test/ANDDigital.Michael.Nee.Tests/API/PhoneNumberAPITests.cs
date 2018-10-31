@@ -62,7 +62,7 @@ namespace ANDDigital.Michael.Nee.Tests.API
         }
 
         [Fact]
-        public async Task Activate_Invalid_PhoneNumber()
+        public async Task Activate_Invalid_PhoneNumber_Returns_NotFound()
         {
             var url = string.Format(_activePhoneNumberUri + "?phoneNumber={0}", "0770090043");
 

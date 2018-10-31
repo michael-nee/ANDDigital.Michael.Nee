@@ -26,9 +26,12 @@ namespace ANDDigital.Michael.Nee.API.Models
 
         private List<PhoneNumber> PhoneNumbersList = new List<PhoneNumber>();
 
-        public IEnumerable<PhoneNumber> CustomerPhoneNumbers()
+        public IEnumerable<PhoneNumber> CustomerPhoneNumbers
         {
-            return PhoneNumbersList;
+            get
+            {
+                return PhoneNumbersList;
+            }
         }
 
         internal bool AddTelephoneToCustomer(PhoneNumber number)
@@ -66,9 +69,12 @@ namespace ANDDigital.Michael.Nee.API.Models
 
         private static List<Customer> Customers = new List<Customer>();
 
-        public static IEnumerable<Customer> AllCustomers()
+        public static IEnumerable<Customer> AllCustomers
         {
-            return Customers.ToList();
+            get
+            {
+                return Customers;
+            }
         }
     }
 }

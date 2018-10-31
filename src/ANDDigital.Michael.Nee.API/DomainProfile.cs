@@ -1,10 +1,6 @@
 ﻿using ANDDigital.Michael.Nee.API.Models;
 using ANDDigital.Michael.Nee.API.ViewModels;
 using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ANDDigital.Michael.Nee.API
 {

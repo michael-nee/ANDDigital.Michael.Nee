@@ -28,7 +28,7 @@ namespace ANDDigital.Michael.Nee.API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "AND Digital Michael Nee Technical Test API", Version = "v1" });
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

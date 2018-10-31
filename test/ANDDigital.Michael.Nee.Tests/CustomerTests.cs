@@ -43,7 +43,7 @@ namespace ANDDigital.Michael.Nee.Tests
 
             Assert.IsType<Customer>(customer);
             Assert.NotNull(customer);
-            Assert.Empty(customer.CustomerPhoneNumbers());
+            Assert.Empty(customer.CustomerPhoneNumbers);
         }
 
 
@@ -56,7 +56,7 @@ namespace ANDDigital.Michael.Nee.Tests
 
             Assert.IsType<Customer>(customer);
             Assert.NotNull(customer);
-            Assert.Empty(customer.CustomerPhoneNumbers());
+            Assert.Empty(customer.CustomerPhoneNumbers);
 
             Assert.IsType<PhoneNumber>(telephone);
             Assert.NotNull(telephone);
@@ -64,8 +64,8 @@ namespace ANDDigital.Michael.Nee.Tests
 
             telephone.AddCustomerToPhoneNumber(customer);
 
-            Assert.NotEmpty(customer.CustomerPhoneNumbers());
-            Assert.NotEmpty(PhoneNumber.AllPhoneNumbers());
+            Assert.NotEmpty(customer.CustomerPhoneNumbers);
+            Assert.NotEmpty(PhoneNumber.AllPhoneNumbers);
         }
 
         [Fact]
@@ -90,7 +90,7 @@ namespace ANDDigital.Michael.Nee.Tests
         public void Retrieve_Customers_ContainsCustomer()
         {
             var customer = Customer.CreateCustomer("Andew Smith", "ANDS9487334");
-            var customers = Customer.AllCustomers();
+            var customers = Customer.AllCustomers;
 
             Assert.NotEmpty(customers);
         }
@@ -98,7 +98,7 @@ namespace ANDDigital.Michael.Nee.Tests
         [Fact]
         public void Rerieve_Customers_List_Correct_Type()
         {
-            var customers = Customer.AllCustomers();
+            var customers = Customer.AllCustomers;
             Assert.IsAssignableFrom<IEnumerable<Customer>>(customers);
         }
     }

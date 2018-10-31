@@ -17,7 +17,7 @@ namespace ANDDigital.Michael.Nee.API.Services
 
             if (!numberExist) return false;
 
-            var number = PhoneNumber.AllPhoneNumbers().Single(c => c.Number == phoneNumber);
+            var number = PhoneNumber.AllPhoneNumbers.SingleOrDefault(c => c.Number == phoneNumber);
 
             return number.ActivateNumber();
         }
@@ -35,15 +35,15 @@ namespace ANDDigital.Michael.Nee.API.Services
 
         public IEnumerable<PhoneNumber> GetAllPhoneNumbers()
         {
-            return PhoneNumber.AllPhoneNumbers().OrderBy(c=> c.CreatedAt);
+            return PhoneNumber.AllPhoneNumbers.OrderBy(c=> c.CreatedAt);
         }
 
         public IEnumerable<PhoneNumber> PhoneNumbersForCustomer(string userId)
         {
             Guard.Against.NullOrEmpty(userId, nameof(userId));
 
-            if (PhoneNumber.AllPhoneNumbers().Any(c => c.Customer != null && c.Customer.UserId == userId))
-            return PhoneNumber.AllPhoneNumbers().Where(c => c.Customer != null && c.Customer.UserId == userId).OrderBy(c => c.CreatedAt);
+            if (PhoneNumber.AllPhoneNumbers.Any(c => c.Customer != null && c.Customer.UserId == userId))
+            return PhoneNumber.AllPhoneNumbers.Where(c => c.Customer != null && c.Customer.UserId == userId).OrderBy(c => c.CreatedAt);
 
             return null;
         }
